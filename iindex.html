@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ирина Фотограф | Свадьбы, Love Story, Портреты</title>
+    <meta name="description" content="Профессиональная фотосъемка в Москве и области. Свадебная фотография, Love Story, портреты и семейные фотосессии.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем styles.css -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#d4a373',secondary:'#e9d8a6'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Главная</a></li>
+                    <li><a href="#portfolio" class="text-gray-800 hover:text-primary font-medium transition-colors">Портфолио</a></li>
+                    <li><a href="#locations" class="text-gray-800 hover:text-primary font-medium transition-colors">Локации</a></li>
+                    <li><a href="#services" class="text-gray-800 hover:text-primary font-medium transition-colors">Услуги</a></li>
+                    <li><a href="#prices" class="text-gray-800 hover:text-primary font-medium transition-colors">Цены</a></li>
+                    <li><a href="#blog" class="text-gray-800 hover:text-primary font-medium transition-colors">Блог</a></li>
+                    <li><a href="#contact" class="text-gray-800 hover:text-primary font-medium transition-colors">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/89262563550" class="hidden md:flex items-center text-gray-800 hover:text-primary">
+                    <div class="w-10 h-10 flex items-center justify-center">
+                        <i class="ri-whatsapp-line ri-lg"></i>
+                    </div>
+                    <span class="font-medium">WhatsApp</span>
+                </a>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-800" id="mobile-menu-button">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white absolute w-full left-0 top-full shadow-md" id="mobile-menu">
+            <ul class="container mx-auto px-4 py-3 space-y-3">
+                <li><a href="#" class="block text-gray-800 hover:text-primary font-medium py-2 transition-colors">Главная</a></li>
+                <li><a href="#portfolio" class="block text-gray-800 hover:text-primary font-medium py-2 transition-colors">Портфолио</a></li>
+                <li><a href="#locations" class="block text-gray-800 hover:text-primary font-medium py-2 transition-colors">Локации</a></li>
+                <li><a href="#services" class="block text-gray-800 hover:text-primary font-medium py-2 transition-colors">Услуги</a></li>
+                <li><a href="#prices" class="block text-gray-800 hover:text-primary font-medium py-2 transition-colors">Цены</a></li>
+                <li><a href="#blog" class="block text-gray-800 hover:text-primary font-medium py-2 transition-colors">Блог</a></li>
+                <li><a href="#contact" class="block text-gray-800 hover:text-primary font-medium py-2 transition-colors">Контакты</a></li>
+                <li><a href="tel:+79123456789" class="flex items-center text-gray-800 hover:text-primary py-2">
+                    <div class="w-10 h-10 flex items-center justify-center">
+                        <i class="ri-phone-line ri-lg"></i>
+                    </div>
+                    <span class="font-medium">+7 (912) 345-67-89</span>
+                </a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section w-full min-h-[600px] flex items-center">
+        <div class="container mx-auto px-4 py-16 md:py-24 w-full">
+            <div class="max-w-xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">Запечатлите ваши особенные моменты</h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8">Профессиональная фотосъемка свадеб, Love Story и портретов в Москве и Подмосковье. Создаю искренние и эмоциональные фотоистории.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#portfolio" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap text-center">Смотреть портфолио</a>
+                    <a href="#contact" class="border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap text-center">Связаться со мной</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Направления съемок</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Выберите интересующий вас вид фотосессии и ознакомьтесь с моими работами</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Wedding Category -->
+                <div class="relative overflow-hidden rounded-lg shadow-md group">
+                    <img src="https://readdy.ai/api/search-image?query=elegant%2520russian%2520wedding%2520photography%252C%2520bride%2520and%2520groom%2520in%2520traditional%2520attire%252C%250beautiful%2520church%2520or%2520palace%2520setting%252C%2520emotional%2520moment%252C%2520soft%2520natural%2520light%252C%2520professional%2520photography%252C%2520high%2520quality%2520image%252C%2520moscow%2520wedding%25" alt="Свадебная фотография" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="text-xl font-semibold text-white group-hover:translate-y-[-8px] transition-transform duration-300">Свадьбы</h3>
+                    </div>
+                </div>
+                <!-- Love Story Category -->
+                <div class="relative overflow-hidden rounded-lg shadow-md group">
+                    <img src="https://readdy.ai/api/search-image?query=romantic%2520russian%2520love%2520story%2520photography%252C%2520couple%2520in%2520love%2520walking%2520in%2520a%2520park%2520or%2520garden%252C%2520soft%2520natural%2520light%252C%2520emotional%2520moment%252C%2520blurred%2520background%2520with%2520greenery%2520and%2520flowers%252C%2520professional%2520photography%252C%2520high%2520quality%2520image%252C%2520moscow%2520love%2520story%25" alt="Love Story" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="text-xl font-semibold text-white group-hover:translate-y-[-8px] transition-transform duration-300">Love Story</h3>
+                    </div>
+                </div>
+                <!-- Portrait Category -->
+                <div class="relative overflow-hidden rounded-lg shadow-md group">
+                    <img src="https://readdy.ai/api/search-image?query=beautiful%2520russian%2520woman%2520portrait%2520photography%252C%2520natural%2520makeup%252C%2520soft%2520natural%2520light%252C%2520blurred%2520background%252C%2520professional%2520photography%252C%2520high%2520quality%2520image%252C%2520moscow%2520portrait%25" alt="Портретная фотография" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="text-xl font-semibold text-white group-hover:translate-y-[-8px] transition-transform duration-300">Портреты</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Мои работы</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Погрузитесь в мир ярких эмоций и незабываемых моментов, запечатленных мной</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Image 1 -->
+                <a href="#" class="gallery-image block rounded-lg overf
+<script src="main.js" defer></script>
+
